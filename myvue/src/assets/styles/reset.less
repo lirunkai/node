@@ -1,0 +1,61 @@
+@import "var";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: @bodyBg;
+  height: 100%;
+  font-size: @normalFontSize;
+  font-family: 'Microsoft YaHei';
+}
+
+input, button, textarea {
+  font-size: inherit;
+  font-family: inherit;
+  outline: 0 none;
+}
+
+a, a:hover, a:visited {
+  color: @mainLinkColor;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+html {
+  display: flex;
+}
+
+body {
+  flex: 1;
+  margin: 0 !important;
+  padding: 0;
+}
+
+button, input[type=submit], input[type=button], label {
+  cursor: pointer;
+  outline: 0 none;
+}
+
+input[type="text"] {
+  border: 1px solid @mainBorderColor;
+  border-radius: 0px;
+  padding: 5px 8px;
+  min-width: 110px;
+  outline: 0 none;
+}
+
+input[type="radio"],input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+select {
+  border: 1px solid @mainBorderColor;
+  //border-radius: 5px;
+  padding: 5px 8px;
+  min-width: 110px;
+  outline: none;
+}
