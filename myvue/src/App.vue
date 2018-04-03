@@ -1,22 +1,17 @@
-<template lang="pug" scoped>
-  div#app
-    el-row
-      router-view
+<template>
+  <div id="app">
+    <router-view/>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'app',
-  data(){
-    return {
-    }
-  }
+  name: 'App'
 }
 </script>
 
-<style lang="less">
-  @import "./assets/styles/global";
-  #app {
+<style>
+#app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
